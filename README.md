@@ -69,6 +69,34 @@ mysql -u sys_temp -p
 ALTER USER 'sys_test'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';
 ```
 
+Создание базы sakila
+
+![image](https://github.com/killakazzak/12-02-sdb-hw/assets/32342205/9ab1b838-c813-44a0-a99f-9a9650e21e0b)
+
+
+Восстановление схемы
+
+![image](https://github.com/killakazzak/12-02-sdb-hw/assets/32342205/2f96458c-b624-4d30-9d7d-fe44aac293db)
+
+
+Восстановление данных
+
+![image](https://github.com/killakazzak/12-02-sdb-hw/assets/32342205/6181c221-ad4d-4546-92dc-2790b3c49be8)
+
+ER - диаграмма
+
+![image](https://github.com/killakazzak/12-02-sdb-hw/assets/32342205/2aec7ed8-5118-404e-a8de-2d426cbdc400)
+
+Просмотр таблиц через CLI
+
+```sql
+use sakila
+SHOW TABLES;
+```
+
+![image](https://github.com/killakazzak/12-02-sdb-hw/assets/32342205/ddc5dfef-cf16-4b38-91a6-26028b5d9afc)
+
+
 
 ### Задание 2
 Составьте таблицу, используя любой текстовый редактор или Excel, в которой должно быть два столбца: в первом должны быть названия таблиц восстановленной базы, во втором названия первичных ключей этих таблиц. Пример: (скриншот/текст)
