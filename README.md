@@ -30,16 +30,16 @@ ALTER USER 'sys_test'@'localhost' IDENTIFIED WITH mysql_native_password BY 'pass
 ### Решение Задание 1
 
 Создание пользователя sys_temp
-```
+```sql
 CREATE USER 'sys_temp'@'localhost' IDENTIFIED BY 'password';
 ```
 
 Назначение прав
-```
+```sql
 GRANT ALL PRIVILEGES ON *.* TO 'sys_temp'@'localhost';
 ```
 Получение списка пользователей в базе данных
-```
+```sql
 SELECT user FROM mysql.user;
 ```
 
@@ -47,7 +47,7 @@ SELECT user FROM mysql.user;
 
 Получение списка прав для пользователя sys_temp
 
-```
+```sql
 SHOW GRANTS FOR 'sys_temp'@'localhost';
 ```
 ![image](https://github.com/killakazzak/12-02-sdb-hw/assets/32342205/97f2c37f-8671-4449-a11e-975ffaeaeccf)
