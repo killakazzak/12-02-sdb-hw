@@ -52,7 +52,22 @@ SHOW GRANTS FOR 'sys_temp'@'localhost';
 ```
 ![image](https://github.com/killakazzak/12-02-sdb-hw/assets/32342205/97f2c37f-8671-4449-a11e-975ffaeaeccf)
 
+Подключение под пользователем sys_temp через консоль
 
+```
+mysql -u sys_temp -p
+```
+![image](https://github.com/killakazzak/12-02-sdb-hw/assets/32342205/4aac3500-d5b6-46c6-bd64-9c5ab8e4e2ff)
+
+Подключение под пользователем sys_temp через DBeaver
+
+![image](https://github.com/killakazzak/12-02-sdb-hw/assets/32342205/27846cd7-18a4-4db0-97ab-0b8fa9612a7a)
+
+Меняем тип аутентификации с sha2
+
+```sql
+ALTER USER 'sys_test'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';
+```
 
 
 ### Задание 2
