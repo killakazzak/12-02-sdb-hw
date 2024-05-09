@@ -110,6 +110,7 @@ customer         | customer_id
 ```sql
 SELECT TABLE_NAME, COLUMN_NAME FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_SCHEMA = 'sakila' AND COLUMN_KEY = 'PRI';
 ```
+```table
 +---------------+--------------+
 | TABLE_NAME    | COLUMN_NAME  |
 +---------------+--------------+
@@ -132,6 +133,7 @@ SELECT TABLE_NAME, COLUMN_NAME FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_SCHEM
 | staff         | staff_id     |
 | store         | store_id     |
 +---------------+--------------+
+```
 
 ![image](https://github.com/killakazzak/12-02-sdb-hw/assets/32342205/c0badbff-51c1-4644-9cad-ff8bb82498fd)
 
