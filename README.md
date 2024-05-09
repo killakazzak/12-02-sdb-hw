@@ -65,9 +65,30 @@ mysql -u sys_temp -p
 
 Меняем тип аутентификации с sha2
 
+Просмотр установленных плагинов
+
+```sql
+SHOW PLUGINS;
+```
+
+![image](https://github.com/killakazzak/12-02-sdb-hw/assets/32342205/a0c7bce6-da89-4874-9c2d-ea8935e85c28)
+
+
 ```sql
 ALTER USER 'sys_test'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';
 ```
+Возникает ошибка 
+
+![image](https://github.com/killakazzak/12-02-sdb-hw/assets/32342205/1300ea1e-23e1-4cfe-bdfa-79ab9d870151)
+
+Причина
+
+![image](https://github.com/killakazzak/12-02-sdb-hw/assets/32342205/f5d85199-7cdf-43e7-ba7b-4917f0cbc33e)
+
+![image](https://github.com/killakazzak/12-02-sdb-hw/assets/32342205/f0da2fef-299c-48b7-bdcc-9939c6476fca)
+
+https://dev.mysql.com/doc/refman/8.0/en/native-pluggable-authentication.html#native-pluggable-authentication-usage
+
 
 Создание базы sakila
 
