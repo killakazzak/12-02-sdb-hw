@@ -31,7 +31,7 @@ ALTER USER 'sys_test'@'localhost' IDENTIFIED WITH mysql_native_password BY 'pass
 
 Создание пользователя sys_temp
 ```
-CREATE USER 'sys_temp'@'localhost' IDENTIFIED BY '0434981';
+CREATE USER 'sys_temp'@'localhost' IDENTIFIED BY 'password';
 ```
 
 Назначение прав
