@@ -29,6 +29,21 @@ ALTER USER 'sys_test'@'localhost' IDENTIFIED WITH mysql_native_password BY 'pass
 
 ### Решение Задание 1
 
+Создание пользователя sys_temp
+```
+CREATE USER 'sys_temp'@'localhost' IDENTIFIED BY '0434981';
+```
+
+Назначение прав
+```
+GRANT ALL PRIVILEGES ON *.* TO 'sys_temp'@'localhost';
+```
+```
+SELECT user FROM mysql.user;
+```
+![image](https://github.com/killakazzak/12-02-sdb-hw/assets/32342205/39d42bae-bcf0-4d79-b6d3-5085895f6b47)
+
+
 ### Задание 2
 Составьте таблицу, используя любой текстовый редактор или Excel, в которой должно быть два столбца: в первом должны быть названия таблиц восстановленной базы, во втором названия первичных ключей этих таблиц. Пример: (скриншот/текст)
 ```
