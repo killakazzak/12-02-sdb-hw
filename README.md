@@ -112,7 +112,7 @@ SELECT TABLE_NAME, COLUMN_NAME FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_SCHEM
 ```
 ```table
 +---------------+--------------+
-| TABLE_NAME    | COLUMN_NAME  |
+| TABLE_NAME    | PRIMARY_KEY  |
 +---------------+--------------+
 | actor         | actor_id     |
 | address       | address_id   |
