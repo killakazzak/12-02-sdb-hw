@@ -150,9 +150,24 @@ SELECT TABLE_NAME, COLUMN_NAME FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_SCHEM
 
 ### Решение Задание 3*
 
+Проверка текущих прав
 
+```sql
+SHOW GRANTS FOR 'sys_temp'@'localhost';
+```
 
+![image](https://github.com/killakazzak/12-02-sdb-hw/assets/32342205/c73903f0-6e15-4d26-b564-240e5f720cd0)
 
+Удаление прав
 
+```sql
+REVOKE INSERT, UPDATE, DELETE ON sakila.* FROM 'sys_temp'@'localhost';
+```
+![image](https://github.com/killakazzak/12-02-sdb-hw/assets/32342205/9c2e28e9-7e94-4ce0-a64c-8032f29258a4)
 
+Проверка прав
 
+```sql
+SHOW GRANTS FOR 'sys_temp'@'localhost';
+```
+![image](https://github.com/killakazzak/12-02-sdb-hw/assets/32342205/2f6ea5cc-5c8b-443c-bc82-06529ef8baaa)
