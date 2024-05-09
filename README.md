@@ -38,15 +38,20 @@ CREATE USER 'sys_temp'@'localhost' IDENTIFIED BY 'password';
 ```
 GRANT ALL PRIVILEGES ON *.* TO 'sys_temp'@'localhost';
 ```
+Получение списка пользователей в базе данных
 ```
 SELECT user FROM mysql.user;
 ```
+
 ![image](https://github.com/killakazzak/12-02-sdb-hw/assets/32342205/39d42bae-bcf0-4d79-b6d3-5085895f6b47)
+
+Получение списка прав для пользователя sys_temp
 
 ```
 SHOW GRANTS FOR 'sys_temp'@'localhost';
 ```
 ![image](https://github.com/killakazzak/12-02-sdb-hw/assets/32342205/97f2c37f-8671-4449-a11e-975ffaeaeccf)
+
 
 
 
